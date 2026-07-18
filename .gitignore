@@ -7,3 +7,7 @@
 *.ilk
 
 # Keep binaries/ - the prebuilt DLLs are the point of this repo.
+
+# Installer logs
+install/install-log.txt
+install/uninstall-log.txt
