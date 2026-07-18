@@ -1,0 +1,9 @@
+# Build intermediates
+*.obj
+*.res
+*.lib
+*.exp
+*.pdb
+*.ilk
+
+# Keep binaries/ - the prebuilt DLLs are the point of this repo.
