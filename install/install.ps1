@@ -10,7 +10,11 @@
     win32k caches layout DLLs, so the layout will not appear until you do.
 
 .EXAMPLE
-    Start-Process powershell -Verb RunAs -ArgumentList '-ExecutionPolicy','Bypass','-File','.\install.ps1'
+    Start-Process powershell -Verb RunAs -ArgumentList '-NoExit','-ExecutionPolicy','Bypass','-File',"`"$PWD\install.ps1`""
+
+    The path must be absolute. Start-Process -Verb RunAs starts the elevated
+    process in C:\Windows\System32, not the current directory, so a relative
+    -File path silently fails to resolve.
 #>
 [CmdletBinding()]
 param()

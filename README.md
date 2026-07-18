@@ -15,7 +15,7 @@ same layout with a modern toolchain, which works.
 Download or clone, then from an **elevated** PowerShell:
 
 ```powershell
-Start-Process powershell -Verb RunAs -ArgumentList '-ExecutionPolicy','Bypass','-File','.\install\install.ps1'
+Start-Process powershell -Verb RunAs -ArgumentList '-NoExit','-ExecutionPolicy','Bypass','-File',"`"$PWD\install\install.ps1`""
 ```
 
 Then **reboot** (or sign out and back in). `win32k` caches layout DLLs, so the
@@ -27,7 +27,7 @@ with `Win`+`Space`.
 To remove it:
 
 ```powershell
-Start-Process powershell -Verb RunAs -ArgumentList '-ExecutionPolicy','Bypass','-File','.\install\uninstall.ps1'
+Start-Process powershell -Verb RunAs -ArgumentList '-NoExit','-ExecutionPolicy','Bypass','-File',"`"$PWD\install\uninstall.ps1`""
 ```
 
 ### What the installer does

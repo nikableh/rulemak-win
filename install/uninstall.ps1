@@ -9,7 +9,11 @@
     Must be run elevated. Reboot afterwards.
 
 .EXAMPLE
-    Start-Process powershell -Verb RunAs -ArgumentList '-ExecutionPolicy','Bypass','-File','.\uninstall.ps1'
+    Start-Process powershell -Verb RunAs -ArgumentList '-NoExit','-ExecutionPolicy','Bypass','-File',"`"$PWD\uninstall.ps1`""
+
+    The path must be absolute. Start-Process -Verb RunAs starts the elevated
+    process in C:\Windows\System32, not the current directory, so a relative
+    -File path silently fails to resolve.
 #>
 [CmdletBinding()]
 param()
