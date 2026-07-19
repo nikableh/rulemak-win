@@ -31,7 +31,17 @@ $src64 = Join-Path $root 'binaries\amd64\Rulemak.dll'
 $src32 = Join-Path $root 'binaries\x86\Rulemak.dll'
 
 foreach ($f in $src64, $src32) {
-    if (-not (Test-Path $f)) { throw "missing binary: $f  (run build\build.bat and build\build32.bat)" }
+    if (-not (Test-Path $f)) {
+        throw @"
+missing binary: $f
+
+The layout DLLs are not where this script expects them. Either:
+  - download the release zip from
+    https://github.com/nikableh/rulemak-win/releases
+    and run install.cmd from inside it, or
+  - build them yourself: build\build.bat and build\build32.bat
+"@
+    }
 }
 
 # ---------------------------------------------------------------- DLLs -----

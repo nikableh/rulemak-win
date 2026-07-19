@@ -6,7 +6,11 @@
 *.pdb
 *.ilk
 
-# Keep binaries/ - the prebuilt DLLs are the point of this repo.
+# Build output - published as release assets
+binaries/
+
+# Release staging
+dist/
 
 # Installer logs
 install/install-log.txt
