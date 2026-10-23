@@ -61,13 +61,28 @@ custom Russian layout already occupies the slot, so it will not clobber one.
 Cyrillic letters arranged on a Colemak base. Shift states used: normal, Shift,
 Ctrl, Ctrl+Alt (AltGr), Shift+Ctrl+Alt.
 
-| Key | AltGr |
-|---|---|
-| `[` (OEM_4) | « |
-| `]` (OEM_6) | » |
-| `'` (OEM_7) | ъ / Ъ |
-| `,` (OEM_COMMA) | < |
-| `.` (OEM_PERIOD) | > |
+| Key | AltGr | Shift+AltGr |
+|---|---|---|
+| `1` | combining acute (stress mark) | |
+| `3` | # | |
+| `4` | $ | |
+| `5` | € | |
+| `7` | & | |
+| `8` | ₽ | |
+| `9` | [ | { |
+| `0` | ] | } |
+| `-` (OEM_MINUS) | – | — |
+| `[` (OEM_4) | « | |
+| `]` (OEM_6) | » | |
+| `a` (а) | ' | |
+| `s` (р) | @ | |
+| `'` (OEM_7) | ъ | Ъ |
+| `,` (OEM_COMMA) | < | |
+| `.` (OEM_PERIOD) | > | |
+| `/` (OEM_2) | \ | \| |
+
+These follow the AltGr symbols of the xkeyboard-config `ru(rulemak)` variant,
+which is also where this layout's `ъ` placement comes from.
 
 `ъ` is also on `OEM_102` (the extra key on 102-key boards) for keyboards that
 have it. `OEM_7` carries `Cap=5` (`CAPLOK|CAPLOKALTGR`) so Caps Lock also
