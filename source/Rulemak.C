@@ -6,7 +6,7 @@
 * Copyright (c) 1985-2001, Microsoft Corporation
 *
 * History:
-* KBDTOOL v3.40 - Created  Sat Jul 18 16:14:40 2026
+* KBDTOOL v3.40 - Created  Fri Oct 23 12:45:29 2026
 \***************************************************************************/
 
 #include <windows.h>
@@ -264,8 +264,8 @@ static ALLOC_SECTION_LDATA VK_TO_WCHARS5 aVkToWch5[] = {
   {'B'          ,CAPLOK ,0x0431   ,0x0411   ,WCH_NONE ,WCH_NONE ,WCH_NONE },
   {'N'          ,CAPLOK ,0x043a   ,0x041a   ,WCH_NONE ,WCH_NONE ,WCH_NONE },
   {'M'          ,CAPLOK ,0x043c   ,0x041c   ,WCH_NONE ,WCH_NONE ,WCH_NONE },
-  {VK_OEM_COMMA ,0      ,','      ,';'      ,WCH_NONE ,WCH_NONE ,WCH_NONE },
-  {VK_OEM_PERIOD,0      ,'.'      ,':'      ,WCH_NONE ,WCH_NONE ,WCH_NONE },
+  {VK_OEM_COMMA ,0      ,','      ,';'      ,WCH_NONE ,'<'      ,WCH_NONE },
+  {VK_OEM_PERIOD,0      ,'.'      ,':'      ,WCH_NONE ,'>'      ,WCH_NONE },
   {VK_OEM_2     ,0      ,'/'      ,'?'      ,WCH_NONE ,WCH_NONE ,WCH_NONE },
   {VK_SPACE     ,0      ,' '      ,' '      ,WCH_NONE ,WCH_NONE ,WCH_NONE },
   {VK_OEM_102   ,CAPLOK ,0x044a   ,0x042a   ,WCH_NONE ,WCH_NONE ,WCH_NONE },

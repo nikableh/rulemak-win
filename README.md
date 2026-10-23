@@ -66,6 +66,8 @@ Ctrl, Ctrl+Alt (AltGr), Shift+Ctrl+Alt.
 | `[` (OEM_4) | « |
 | `]` (OEM_6) | » |
 | `'` (OEM_7) | ъ / Ъ |
+| `,` (OEM_COMMA) | < |
+| `.` (OEM_PERIOD) | > |
 
 `ъ` is also on `OEM_102` (the extra key on 102-key boards) for keyboards that
 have it. `OEM_7` carries `Cap=5` (`CAPLOK|CAPLOKALTGR`) so Caps Lock also
